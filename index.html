@@ -3,7 +3,25 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Imagem Centralizada com Redirecionamento</title>
+  
+  <title>Imagem Centralizada que Redireciona - SeuSite</title>
+  
+  <!-- Meta description para SEO -->
+  <meta name="description" content="Página simples com imagem centralizada que redireciona ao clicar. Ideal para direcionar usuários com estilo e usabilidade." />
+  
+  <!-- Meta tags para redes sociais (Open Graph) -->
+  <meta property="og:title" content="Imagem Centralizada que Redireciona - SeuSite" />
+  <meta property="og:description" content="Página simples com imagem centralizada que redireciona ao clicar." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.seusite.com/" />
+  <meta property="og:image" content="https://www.seusite.com/seta.webp" />
+  
+  <!-- Meta Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Imagem Centralizada que Redireciona - SeuSite" />
+  <meta name="twitter:description" content="Página simples com imagem centralizada que redireciona ao clicar." />
+  <meta name="twitter:image" content="https://www.seusite.com/seta.webp" />
+  
   <style>
     /* Centraliza tudo na tela */
     body, html {
@@ -13,6 +31,17 @@
       justify-content: center; /* horizontal */
       align-items: center;     /* vertical */
       background-color: #f0f0f0;
+      font-family: Arial, sans-serif;
+    }
+
+    a {
+      display: inline-block;
+      outline-offset: 4px;
+    }
+
+    a:focus img {
+      outline: 3px solid #007acc; /* foco acessível */
+      outline-offset: 4px;
     }
 
     img {
@@ -22,16 +51,20 @@
       border: 2px solid #333;
       border-radius: 8px;
       transition: transform 0.3s;
+      display: block;
     }
 
-    img:hover {
+    img:hover,
+    a:focus img {
       transform: scale(1.05);
     }
   </style>
 </head>
 <body>
-  <a href="https://www.exemplo.com" target="_blank" rel="noopener noreferrer">
-    <img src="seta.webp" alt="Imagem clicável" />
-  </a>
+  <main>
+    <a href="https://www.exemplo.com" target="_blank" rel="noopener noreferrer" aria-label="Clique para acessar o site exemplo.com">
+      <img src="seta.webp" alt="Seta indicando direção para redirecionamento" />
+    </a>
+  </main>
 </body>
 </html>
