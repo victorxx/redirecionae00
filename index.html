@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Imagem Centralizada com Redirecionamento</title>
+  <style>
+    /* Centraliza tudo na tela */
+    body, html {
+      height: 100%;
+      margin: 0;
+      display: flex;
+      justify-content: center; /* horizontal */
+      align-items: center;     /* vertical */
+      background-color: #f0f0f0;
+    }
+
+    img {
+      cursor: pointer;
+      max-width: 80vw;
+      max-height: 80vh;
+      border: 2px solid #333;
+      border-radius: 8px;
+      transition: transform 0.3s;
+    }
+
+    img:hover {
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+  <a href="https://www.exemplo.com" target="_blank" rel="noopener noreferrer">
+    <img src="https://via.placeholder.com/300x200.png?text=Clique+Aqui" alt="Imagem clicável" />
+  </a>
+</body>
+</html>
