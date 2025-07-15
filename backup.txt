@@ -62,9 +62,36 @@
 </head>
 <body>
   <main>
-    <a href="https://victorxx.github.io/reflexao01git/" target="_blank" rel="noopener noreferrer" aria-label="Clique para acessar o site exemplo.com">
+    <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Clique para acessar o site exemplo.com" id="ok">
       <img src="seta.webp" alt="Seta indicando direção para redirecionamento" />
     </a>
+
   </main>
+  <script>
+function iniciar(){
+        const links=[
+        "https://victorxx.github.io/reflexao01git/",
+        "https://victorxx.github.io/redirecionadorlinksgit1/",
+        "https://victorxx.github.io/airbnbrandom01/",
+        "https://www.larissasaib.com.br/larissa-saib",
+        "https://laudobancriotimline.netlify.app/",
+        "https://victorxx.github.io/laudobancariogithub/",
+        "https://victorxx.github.io/VPSVENDA/contatoroberto.html",
+        "https://geocredibnkvitoria.com/",
+        "https://victorxx.github.io/topicogithub01/",
+        "https://victorxx.github.io/topicogithub01/randomizador.html"
+    ];
+    function mudar(arr){
+        return Math.floor(Math.random()* arr.length);
+
+    }
+    const mudei=mudar(links);
+    const mudando=links[mudei];
+    document.getElementById('ok').innerHTML=mudando;
+}
+iniciar();
+setInterval(iniciar,1200);
+
+  </script>
 </body>
 </html>
