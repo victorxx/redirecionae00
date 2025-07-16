@@ -71,6 +71,7 @@
   <script>
 function iniciar(){
         const links=[
+        "https://victorxx.github.io/erpgithubrnadom01/",
         "https://victorxx.github.io/laudobancariogithub/",
         "https://victorxx.github.io/VPSVENDA/contatoroberto.html",
         "https://victorxx.github.io/reflexao01git/",
